@@ -23,8 +23,4 @@ should be injected by the application.'
   require("react-dom").EventPluginHub.injection.injectEventPluginsByName({
     'TapEventPlugin':       require('./TapEventPlugin.js')(shouldRejectClick)
   });
-/*
-  require('react-dom/lib/EventPluginHub').injection.injectEventPluginsByName({
-    'TapEventPlugin':       require('./TapEventPlugin.js')(shouldRejectClick)
-  });*/
 };
