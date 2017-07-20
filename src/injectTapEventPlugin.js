@@ -20,7 +20,7 @@ should be injected by the application.'
 
   alreadyInjected = true;
 
-  require("react-dom").EventPluginRegistry.injectEventPluginsByName({
+  require("react-dom").EventPluginHub.injection.injectEventPluginsByName({
     'TapEventPlugin':       require('./TapEventPlugin.js')(shouldRejectClick)
   });
 /*
